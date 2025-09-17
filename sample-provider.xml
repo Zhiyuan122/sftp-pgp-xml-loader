@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProviderExtract xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <ExtractDate>2024-01-15T10:30:00Z</ExtractDate>
+        <Version>1.2</Version>
+        <RecordCount>2</RecordCount>
+        <Source>TELUS Health Gateway</Source>
+    </Header>
+    
+    <Providers>
+        <Provider>
+            <ProviderId>12345</ProviderId>
+            <ProviderName>Dr. John Smith</ProviderName>
+            <ProviderType>Physician</ProviderType>
+            <Specialties>
+                <Specialty>Family Medicine</Specialty>
+                <Specialty>Internal Medicine</Specialty>
+            </Specialties>
+            <Locations>
+                <Location>
+                    <Address>123 Main Street</Address>
+                    <City>Toronto</City>
+                    <Province>ON</Province>
+                    <PostalCode>M5V 3A8</PostalCode>
+                    <Phone>416-555-0123</Phone>
+                </Location>
+            </Locations>
+        </Provider>
+        
+        <Provider>
+            <ProviderId>67890</ProviderId>
+            <ProviderName>Dr. Jane Doe</ProviderName>
+            <ProviderType>Specialist</ProviderType>
+            <Specialties>
+                <Specialty>Cardiology</Specialty>
+            </Specialties>
+            <Locations>
+                <Location>
+                    <Address>456 Oak Avenue</Address>
+                    <City>Vancouver</City>
+                    <Province>BC</Province>
+                    <PostalCode>V6B 1A1</PostalCode>
+                    <Phone>604-555-0456</Phone>
+                </Location>
+                <Location>
+                    <Address>789 Pine Street</Address>
+                    <City>Vancouver</City>
+                    <Province>BC</Province>
+                    <PostalCode>V6C 2B2</PostalCode>
+                    <Phone>604-555-0789</Phone>
+                </Location>
+            </Locations>
+        </Provider>
+    </Providers>
+</ProviderExtract>
