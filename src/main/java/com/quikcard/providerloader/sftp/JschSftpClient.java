@@ -151,7 +151,7 @@ public class JschSftpClient implements SftpClient {
             
             return fileNames;
             
-        } catch (SftpException e) {
+        } catch (com.jcraft.jsch.SftpException e) {
             logger.error("Failed to list files in directory: {}", remoteDirectory, e);
             throw new SftpException("Failed to list files: " + e.getMessage(), e);
         }
@@ -185,7 +185,7 @@ public class JschSftpClient implements SftpClient {
             
             logger.info("Successfully downloaded file: {} to {}", fileName, localPath);
             
-        } catch (SftpException e) {
+        } catch (com.jcraft.jsch.SftpException e) {
             logger.error("Failed to download file: {}", fileName, e);
             throw new SftpException("Failed to download file: " + fileName + " - " + e.getMessage(), e);
         }
@@ -212,7 +212,7 @@ public class JschSftpClient implements SftpClient {
             SftpATTRS attrs = sftpChannel.stat(remotePath);
             return attrs.getSize();
             
-        } catch (SftpException e) {
+        } catch (com.jcraft.jsch.SftpException e) {
             logger.error("Failed to get file size for: {}", fileName, e);
             throw new SftpException("Failed to get file size: " + fileName + " - " + e.getMessage(), e);
         }

@@ -52,11 +52,11 @@ public class AppConfig {
     }
     
     public String getSftpPrivateKeyPath() {
-        return getProperty("sftp.private.key.path");
+        return getProperty("sftp.private.key.path", null);
     }
     
     public String getSftpPrivateKeyPassphrase() {
-        return getProperty("sftp.private.key.passphrase");
+        return getProperty("sftp.private.key.passphrase", null);
     }
     
     public String getSftpRemoteDirectory() {
